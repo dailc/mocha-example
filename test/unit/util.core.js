@@ -27,7 +27,7 @@ describe('ajax相关', function() {
         data;
     before(function() {
         // 在本区块的所有测试用例之前执行
-        testPurlanel = '//115.29.151.25:8012/request.php?action=testV7List';
+        url = '//115.29.151.25:8012/request.php?action=testV7List';
         data = JSON.stringify({
                 token: 'RXBvaW50X1dlYlNlcml2Y2VfKiojIzA2MDE=',
                 params: {
@@ -40,7 +40,7 @@ describe('ajax相关', function() {
     
     it('success（返回数据格式正确）', function(done) {
         Util.ajax({
-            url: '//115.29.151.25:8012/request.php?action=testV7List',
+            url: url,
             data: data,
             success: function(response) {
                 expect(response.status.code).to.be.equal(200);
@@ -52,7 +52,7 @@ describe('ajax相关', function() {
 
     it('then（promise用法）', function(done) {
         Util.ajax({
-            url: '//115.29.151.25:8012/request.php?action=testV7List',
+            url: url,
             data: data,
             error: null
         }).then(function(response) {
