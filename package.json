@@ -1,0 +1,10 @@
+{
+  "name": "mocha-example",
+  "version": "1.0.0",
+  "description": "mocha example",
+  "author": "dailc",
+  "license": "MIT",
+  "devDependencies": {
+
+  }
+}

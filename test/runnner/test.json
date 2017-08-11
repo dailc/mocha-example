@@ -1,0 +1,5 @@
+{
+    "util.core": ["../unit/util.core.js"],
+    "util.string": ["js/utils/util.string.js"],
+    "util.html": ["js/utils/util.html.js"]
+}
